@@ -17,7 +17,7 @@ export default function Cta() {
 
               {/* CTA button */}
               <div>
-                <a className="btn text-blue-600 bg-gradient-to-r from-blue-100 to-white" href="/pricing">Start your consultation</a>
+                <a className="btn text-blue-600 bg-gradient-to-r from-blue-100 to-white" href="/ContactUs">Start your consultation</a>
               </div>
 
             </div>
