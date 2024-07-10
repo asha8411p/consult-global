@@ -1,10 +1,6 @@
-export const metadata = {
-    title: 'Import/Export Services',
-    description: 'Page description',
-}
-
 import React from 'react';
 import Head from 'next/head';
+import { CSSProperties } from 'react';
 
 const ImportExportPage: React.FC = () => {
   return (
@@ -75,7 +71,7 @@ const ImportExportPage: React.FC = () => {
   );
 };
 
-const styles = {
+const styles: { [key: string]: CSSProperties } = {
   container: {
     fontFamily: 'Arial, sans-serif',
     padding: '20px',

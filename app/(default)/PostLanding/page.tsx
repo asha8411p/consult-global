@@ -1,9 +1,11 @@
+import React from 'react';
+import Head from 'next/head';
+import { CSSProperties } from 'react';
+
 export const metadata = {
     title: 'Post-Landing Services',
     description: 'Page description',
 }
-import React from 'react';
-import Head from 'next/head';
 
 const PostLandingPage: React.FC = () => {
   return (
@@ -75,7 +77,7 @@ const PostLandingPage: React.FC = () => {
   );
 };
 
-const styles = {
+const styles: { [key: string]: CSSProperties } = {
   container: {
     fontFamily: 'Arial, sans-serif',
     padding: '20px',
