@@ -1,144 +1,19 @@
 import React from 'react';
-import Head from 'next/head';
-import { CSSProperties } from 'react';
 
-export const metadata = {
-    title: 'Post-Landing Services',
-    description: 'Page description',
-}
-
-const PostLandingPage: React.FC = () => {
-  return (
-    <div style={styles.container}>
-      <Head>
-        <title>Consultancy Firm - Post-Landing Services</title>
-        <meta name="description" content="Comprehensive post-landing services to help you settle in your new location." />
-      </Head>
-
-      <header style={styles.header}>
-        <h1>Post-Landing Consultancy Services</h1>
-      </header>
-
-      <section style={styles.introduction}>
-        <h2>About Our Service</h2>
-        <p>
-          At XYZ Consultancy, we provide comprehensive post-landing services to help you smoothly transition and settle into your new location.
-          Our expert team is here to assist you with all the necessary arrangements and support to ensure a hassle-free experience.
-        </p>
-      </section>
-
-      <section style={styles.services}>
-        <h2>Our Services</h2>
-        <ul>
-          <li>Accommodation Assistance</li>
-          <li>Orientation and City Tours</li>
-          <li>Legal and Documentation Support</li>
-          <li>Banking and Financial Services</li>
-          <li>Healthcare and Insurance Guidance</li>
-          <li>School and Childcare Enrollment</li>
-        </ul>
-      </section>
-
-      <section style={styles.testimonials}>
-        <h2>Client Testimonials</h2>
-        <div style={styles.testimonial}>
-          <p>"XYZ Consultancy made our relocation process so much easier. Their team handled everything, allowing us to focus on settling in."</p>
-          <cite>- Maria Gomez, Relocated from Spain</cite>
+const PostLanding: React.FC = () => {
+    return (
+        <div>
+            <header>
+                <h1>Welcome to the Post-Landing Page</h1>
+            </header>
+            <main>
+                <p>This is the main content of the Post-Landing page. Customize it as needed.</p>
+            </main>
+            <footer>
+                <p>&copy; 2024 Your Company. All rights reserved.</p>
+            </footer>
         </div>
-        <div style={styles.testimonial}>
-          <p>"The post-landing services provided by XYZ Consultancy were invaluable. We felt supported every step of the way."</p>
-          <cite>- Alex Johnson, Moved to Australia</cite>
-        </div>
-      </section>
-
-      <section style={styles.contact}>
-        <h2>Contact Us</h2>
-        <form style={styles.contactForm}>
-          <div style={styles.formGroup}>
-            <label htmlFor="name">Name</label>
-            <input type="text" id="name" name="name" required style={styles.input} />
-          </div>
-          <div style={styles.formGroup}>
-            <label htmlFor="email">Email</label>
-            <input type="email" id="email" name="email" required style={styles.input} />
-          </div>
-          <div style={styles.formGroup}>
-            <label htmlFor="message">Message</label>
-            <textarea id="message" name="message" required style={styles.textarea}></textarea>
-          </div>
-          <button type="submit" style={styles.button}>Submit</button>
-        </form>
-      </section>
-
-      <footer style={styles.footer}>
-        <p>&copy; 2024 XYZ Consultancy. All rights reserved.</p>
-      </footer>
-    </div>
-  );
+    );
 };
 
-const styles: { [key: string]: CSSProperties } = {
-  container: {
-    fontFamily: 'Arial, sans-serif',
-    padding: '20px',
-    maxWidth: '800px',
-    margin: '0 auto',
-  },
-  header: {
-    textAlign: 'center',
-    marginBottom: '40px',
-  },
-  introduction: {
-    marginBottom: '40px',
-  },
-  services: {
-    marginBottom: '40px',
-  },
-  testimonials: {
-    marginBottom: '40px',
-    backgroundColor: '#f9f9f9',
-    padding: '20px',
-    borderRadius: '5px',
-  },
-  testimonial: {
-    marginBottom: '20px',
-  },
-  contact: {
-    marginBottom: '40px',
-  },
-  contactForm: {
-    display: 'flex',
-    flexDirection: 'column',
-  },
-  formGroup: {
-    marginBottom: '15px',
-  },
-  input: {
-    padding: '10px',
-    border: '1px solid #ccc',
-    borderRadius: '5px',
-    width: '100%',
-  },
-  textarea: {
-    padding: '10px',
-    border: '1px solid #ccc',
-    borderRadius: '5px',
-    width: '100%',
-    height: '100px',
-  },
-  button: {
-    padding: '10px 20px',
-    backgroundColor: '#0070f3',
-    color: 'white',
-    border: 'none',
-    borderRadius: '5px',
-    cursor: 'pointer',
-  },
-  footer: {
-    textAlign: 'center',
-    marginTop: '40px',
-    color: '#777',
-  },
-};
-
-export default PostLandingPage;
+export default PostLanding;
